@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/profileLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <View
+                android:id="@+id/seperator"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                app:layout_widthPercent="80%"
+                app:layout_aspectRatio="100%"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/prof_bg" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/imageProfile"
+                android:layout_toStartOf="@+id/imageProfile"
+                android:paddingRight="5dp"
+                android:paddingEnd="5dp"
+                android:paddingBottom="25dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/colorBlack"
+                android:fontFamily="sans-serif-light"
+                android:maxLines="1"
+                android:text="Posts" />
+
+            <TextView
+                android:id="@+id/tvPosts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/imageProfile"
+                android:layout_toStartOf="@+id/imageProfile"
+                android:paddingRight="5dp"
+                android:paddingEnd="5dp"
+                android:paddingBottom="55dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:text="17 M" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/imageProfile"
+                android:layout_toStartOf="@+id/imageProfile"
+                android:paddingRight="5dp"
+                android:paddingEnd="5dp"
+                android:paddingTop="55dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/colorBlack"
+                android:fontFamily="sans-serif-light"
+                android:maxLines="1"
+                android:text="Likes" />
+
+            <TextView
+                android:id="@+id/tvLikes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/imageProfile"
+                android:layout_toStartOf="@+id/imageProfile"
+                android:paddingRight="5dp"
+                android:paddingEnd="5dp"
+                android:paddingTop="25dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:text="12.6 K" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/imageProfile"
+                android:layout_toEndOf="@+id/imageProfile"
+                android:paddingLeft="5dp"
+                android:paddingStart="5dp"
+                android:paddingBottom="25dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/colorBlack"
+                android:fontFamily="sans-serif-light"
+                android:maxLines="1"
+                android:text="Followers" />
+
+            <TextView
+                android:id="@+id/tvFollowers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/imageProfile"
+                android:layout_toEndOf="@+id/imageProfile"
+                android:paddingLeft="5dp"
+                android:paddingStart="5dp"
+                android:paddingBottom="55dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:text="3217" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/imageProfile"
+                android:layout_toEndOf="@+id/imageProfile"
+                android:paddingLeft="5dp"
+                android:paddingStart="5dp"
+                android:paddingTop="55dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/colorBlack"
+                android:fontFamily="sans-serif-light"
+                android:maxLines="1"
+                android:text="Following" />
+
+            <TextView
+                android:id="@+id/tvFollowing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/imageProfile"
+                android:layout_toEndOf="@+id/imageProfile"
+                android:paddingLeft="5dp"
+                android:paddingStart="5dp"
+                android:paddingTop="25dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:text="834" />
+
+            <ImageView
+                android:id="@+id/imageProfile"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_widthPercent="40%"
+                app:layout_aspectRatio="100%"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/prof_bg"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp" />
+
+        </android.support.percent.PercentRelativeLayout>
+
+            <TextView
+                android:id="@+id/tvFullname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/colorBlack"
+                android:fontFamily="sans-serif-light"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:text="Lorem Ipsum" />
+
+            <TextView
+                android:id="@+id/tvUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/colorGray"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:text="loripsm" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:background="@color/colorGray" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipe_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activities.HomeActivity">
+
+    <item
+        android:id="@+id/action_friends"
+        android:orderInCategory="1"
+        android:title="Friends"
+        android:icon="@drawable/friends"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_edit_profile"
+        android:orderInCategory="2"
+        android:title="Edit Profile"
+        android:icon="@drawable/editprofile"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_logout"
+        android:orderInCategory="3"
+        android:title="@string/action_logout"
+        app:showAsAction="never" />
+
+</menu>

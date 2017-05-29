@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:background="@android:drawable/dialog_holo_light_frame"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/colorClaret"
+        android:fontFamily="sans-serif-light"
+        android:text="Şu an yanında ne var?" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:maxLines="1"
+            android:textColor="@color/colorBlack"
+            android:fontFamily="sans-serif-light"
+            android:text="2423 posts by 114 people" />
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_below="@+id/tvInfo"
+            android:layout_alignLeft="@+id/tvInfo"
+            android:layout_marginTop="5dp"
+            android:maxLines="1"
+            android:textColor="@color/colorBlack"
+            android:fontFamily="sans-serif-light"
+            android:text="6 hours left (created 12 hours ago)" />
+
+        <Button
+            android:id="@+id/buttonSnap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="14sp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:text="Snap" />
+
+    </RelativeLayout>
+    
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="12dp" />
+
+</LinearLayout>

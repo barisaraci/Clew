@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Clew</string>
+
+    <string name="title_activity_main">Clew</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_logout">Log Out</string>
+    <string name="action_admin">Admin</string>
+
+    <string name="homeProfile">Profile</string>
+    <string name="homeFeed">Feed</string>
+    <string name="homeBest">Best</string>
+    <string name="homeTrace">Trace</string>
+
+    <string name="userName">Username</string>
+    <string name="fullName">Full name</string>
+    <string name="save">Save</string>
+
+    <string name="error">There is a problem. Please check your internet connection or try again later.</string>
+    <string name="error1">Please pick a username between 6 to 16 characters.</string>
+    <string name="error2">Please pick a name between 6 to 30 characters.</string>
+    <string name="error3">Please pick a username without special characters.</string>
+    <string name="error4">Please pick a name without special characters.</string>
+    <string name="error5">This username is already taken.</string>
+    <string name="success">Success.</string>
+
+    <string name="timeMinute">m</string>
+    <string name="timeHour">h</string>
+    <string name="timeDay">d</string>
+    <string name="timeWeek">w</string>
+    <string name="timeLeft">left</string>
+
+    <string name="actionType1">posted an image</string>
+    <string name="actionType2">reposted an image</string>
+
+</resources>

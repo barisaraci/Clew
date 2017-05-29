@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/windowBackground">
+
+    <!--<TextView
+        android:id="@+id/clewLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/colorPrimary"
+        android:typeface="serif"
+        android:textSize="50sp"
+        android:layout_marginTop="50dp"
+        android:text="@string/app_name" />-->
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        style="?android:attr/progressBarStyleLarge" />
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ImageButton
+            android:id="@+id/buttonLoginFb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_widthPercent="80%"
+            app:layout_aspectRatio="100%"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:background="@color/windowBackground"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/loginfb" />
+
+        <ImageButton
+            android:id="@+id/buttonLoginG"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_widthPercent="80%"
+            app:layout_aspectRatio="100%"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/buttonLoginFb"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:background="@color/windowBackground"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/loging" />
+
+    </android.support.percent.PercentRelativeLayout>
+
+</FrameLayout>

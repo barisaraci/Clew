@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/users_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/civAvatar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            app:civ_border_width="0dp"
+            android:src="@drawable/profile0" />
+
+        <TextView
+            android:id="@+id/tvFullName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_toRightOf="@+id/civAvatar"
+            android:layout_toEndOf="@+id/civAvatar"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:maxLines="1"
+            android:textColor="@color/colorBlack"
+            android:fontFamily="sans-serif-light"
+            android:text="Barış Aracı" />
+
+        <TextView
+            android:id="@+id/tvUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_below="@+id/tvFullName"
+            android:layout_alignLeft="@+id/tvFullName"
+            android:maxLines="1"
+            android:textColor="@color/colorBlack"
+            android:fontFamily="sans-serif-light"
+            android:text="lorips" />
+
+        <Button
+            android:id="@+id/buttonFollow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="14sp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:text="Follow" />
+
+    </RelativeLayout>
+
+</LinearLayout>

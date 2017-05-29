@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/civAvatar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            app:civ_border_width="0dp"
+            android:src="@drawable/profile0" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_toRightOf="@+id/civAvatar"
+            android:layout_toEndOf="@+id/civAvatar"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="4dp"
+            android:maxLines="1"
+            android:textColor="@color/colorBlack"
+            android:fontFamily="sans-serif-light"
+            android:text="Barış Aracı" />
+
+        <TextView
+            android:id="@+id/tvTimePassed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:maxLines="1"
+            android:fontFamily="sans-serif-light"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorBlack"
+            android:text="17m" />
+
+        <TextView
+            android:id="@+id/tvTrace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvName"
+            android:layout_alignLeft="@+id/tvName"
+            android:layout_alignStart="@+id/tvName"
+            android:maxLines="1"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorClaret"
+            android:fontFamily="sans-serif-light"
+            android:text="Are you lorem ipsum?" />
+
+        <LinearLayout
+            android:id="@+id/imageLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/civAvatar"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:background="@color/colorGray" />
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:background="@color/colorGray" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonLike"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/imageLayout"
+            android:layout_marginTop="10dp"
+            android:background="?android:selectableItemBackground"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="sans-serif"
+            android:text="Like" />
+
+        <TextView
+            android:id="@+id/tvLikes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_below="@id/imageLayout"
+            android:layout_toRightOf="@id/buttonLike"
+            android:layout_marginTop="13dp"
+            android:maxLines="1"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/colorBlack"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/tvType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_below="@id/imageLayout"
+            android:maxLines="1"
+            android:fontFamily="sans-serif-light"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorPrimary"
+            android:text="#photo" />
+
+    </RelativeLayout>
+
+</LinearLayout>
